@@ -1,3 +1,9 @@
+# revision 19410
+# category Package
+# catalog-ctan /macros/latex/contrib/mfnfss
+# catalog-date 2010-07-12 11:01:48 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-mfnfss
 Version:	20100712
 Release:	1
@@ -57,6 +63,7 @@ also available via the pandora-latex package.
 %doc %{_texmfdistdir}/source/latex/mfnfss/oldgerm.ins
 %doc %{_texmfdistdir}/source/latex/mfnfss/pandora.dtx
 %doc %{_texmfdistdir}/source/latex/mfnfss/pandora.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,3 +74,5 @@ also available via the pandora-latex package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
