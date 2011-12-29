@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 This bundle contains two packages: - oldgerm, a package to
@@ -29,20 +26,12 @@ pandora, a package to typeset with Pandora fonts designed by
 Neena Billawala. Note that support for the Pandora fonts is
 also available via the pandora-latex package.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -64,7 +53,6 @@ also available via the pandora-latex package.
 %doc %{_texmfdistdir}/source/latex/mfnfss/oldgerm.ins
 %doc %{_texmfdistdir}/source/latex/mfnfss/pandora.dtx
 %doc %{_texmfdistdir}/source/latex/mfnfss/pandora.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -75,5 +63,3 @@ also available via the pandora-latex package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
