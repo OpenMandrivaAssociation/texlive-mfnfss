@@ -63,3 +63,17 @@ also available via the pandora-latex package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100712-2
++ Revision: 753936
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100712-1
++ Revision: 719009
+- texlive-mfnfss
+- texlive-mfnfss
+- texlive-mfnfss
+- texlive-mfnfss
+
