@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-mfnfss
 Version:	20100712
-Release:	8
+Release:	9
 Summary:	Packages to typeset oldgerman and pandora fonts in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mfnfss
