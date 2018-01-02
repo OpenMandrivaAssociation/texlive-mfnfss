@@ -1,12 +1,6 @@
-# revision 19410
-# category Package
-# catalog-ctan /macros/latex/contrib/mfnfss
-# catalog-date 2010-07-12 11:01:48 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-mfnfss
-Version:	20100712
-Release:	10
+Version:	20171212
+Release:	1
 Summary:	Packages to typeset oldgerman and pandora fonts in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mfnfss
@@ -36,23 +30,10 @@ also available via the pandora-latex package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/mfnfss/oldgerm.sty
-%{_texmfdistdir}/tex/latex/mfnfss/ot1panr.fd
-%{_texmfdistdir}/tex/latex/mfnfss/ot1pss.fd
-%{_texmfdistdir}/tex/latex/mfnfss/pandora.sty
-%{_texmfdistdir}/tex/latex/mfnfss/uyfrak.fd
-%{_texmfdistdir}/tex/latex/mfnfss/uygoth.fd
-%{_texmfdistdir}/tex/latex/mfnfss/uyinit.fd
-%{_texmfdistdir}/tex/latex/mfnfss/uyswab.fd
-%doc %{_texmfdistdir}/doc/latex/mfnfss/changes.txt
-%doc %{_texmfdistdir}/doc/latex/mfnfss/manifest.txt
-%doc %{_texmfdistdir}/doc/latex/mfnfss/oldgerm.pdf
-%doc %{_texmfdistdir}/doc/latex/mfnfss/readme.txt
+%{_texmfdistdir}/tex/latex/mfnfss
+%doc %{_texmfdistdir}/doc/latex/mfnfss
 #- source
-%doc %{_texmfdistdir}/source/latex/mfnfss/oldgerm.dtx
-%doc %{_texmfdistdir}/source/latex/mfnfss/oldgerm.ins
-%doc %{_texmfdistdir}/source/latex/mfnfss/pandora.dtx
-%doc %{_texmfdistdir}/source/latex/mfnfss/pandora.ins
+%doc %{_texmfdistdir}/source/latex/mfnfss
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,17 +44,3 @@ also available via the pandora-latex package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100712-2
-+ Revision: 753936
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100712-1
-+ Revision: 719009
-- texlive-mfnfss
-- texlive-mfnfss
-- texlive-mfnfss
-- texlive-mfnfss
-
