@@ -1,5 +1,5 @@
 Name:		texlive-mfnfss
-Version:	20171212
+Version:	20180303
 Release:	1
 Summary:	Packages to typeset oldgerman and pandora fonts in LaTeX
 Group:		Publishing
