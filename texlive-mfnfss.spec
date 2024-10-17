@@ -3,7 +3,7 @@ Version:	46036
 Release:	2
 Summary:	Packages to typeset oldgerman and pandora fonts in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mfnfss
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mfnfss
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mfnfss.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mfnfss.doc.r%{version}.tar.xz
